@@ -1,5 +1,6 @@
 language: c
 compiler: gcc
+before_install: sudo apt-get install libgsl-dev
 script:
   - cd src
   - make clean

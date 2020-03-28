@@ -1,0 +1,11 @@
+language: c
+compiler: gcc
+script:
+  - cd src
+  - make clean
+  - make all
+  - ./watts_strogatz.exe 1000 10 0.1
+
+notifications:
+  email:
+    - willprobert@gmail.com
